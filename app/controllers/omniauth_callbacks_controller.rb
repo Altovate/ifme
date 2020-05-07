@@ -14,7 +14,7 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
   def find_auth_translation(provider)
     if provider == 'google'
-      return t('omniauth.google')
+      return t('navigation.google')
     else if provider == 'facebook'
       return t('navigation.facebook')
     end
